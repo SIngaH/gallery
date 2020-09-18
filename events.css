@@ -7,6 +7,9 @@
     flex-direction:column;
     margin:5% 0;
 }
+p{
+    color:white;
+}
 .images{
     display:flex;
     justify-content: space-evenly;
