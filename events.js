@@ -1,7 +1,7 @@
 let allImages = document.querySelectorAll(".image");
 let index = 0;
 
-// if(screen.width >= 540){
+if(screen.width >= 540){
     let progressBoxes = document.querySelectorAll(".events-progress-box");
     for (let i = 0; i < progressBoxes.length; i++) {
         progressBoxes[i].addEventListener("click", ()=>{
@@ -58,10 +58,12 @@ let index = 0;
             });
         }
     }
-// }else{
-//     console.log(progressBoxes)
-    /*
+}else{
+    allImages[1].classList.add("hide")
+    let progressBoxes = document.querySelectorAll(".aBox");
+    
     for (let i = 0; i < progressBoxes.length; i++) {
+        progressBoxes[i].classList.remove("hide");
         progressBoxes[i].addEventListener("click", ()=>{
             clearInterval(myInterval)
             allButChosen(i);
@@ -75,11 +77,10 @@ let index = 0;
             }
         });
         getImgs(i);
-        
     }
     
     /* change img every 3 sec untill one of the little boxes are pressed */
-    /*let myInterval = setInterval(() => {
+    let myInterval = setInterval(() => {
         usingInterval();
     }, 3000);
     
@@ -92,29 +93,12 @@ let index = 0;
         allButChosen(index)
     }
     
-    function getImgs(index){
-        if(index === 0){
-            allImages.forEach((image, index) => {
-                image.classList.remove("hide")
-                if (index !== 0 && index !== 1){
-                    image.classList.add("hide")
-                }
-            });
-        }else if(index === 1){
-            allImages.forEach((image, index) => {
-                image.classList.remove("hide")
-                if (index !== 2 && index !== 3){
-                    image.classList.add("hide")
-                }
-            });
-        }else{
-            allImages.forEach((image, index) => {
-                image.classList.remove("hide")
-                if (index !== 4 && index !== 5){
-                    image.classList.add("hide")
-                }
-            });
-        }
-    }*/
-// }
-document.querySelector("h1").innerHTML = screen.width
+    function getImgs(i){
+        allImages.forEach((image, index) => {
+            image.classList.remove("hide")
+            if (index !== i){
+                image.classList.add("hide")
+            }
+        });
+    }
+}
