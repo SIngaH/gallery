@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom:5%;
+    width:100%;
 }
 .events-progress-boxes{
     display:flex;
