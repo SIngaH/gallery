@@ -60,7 +60,7 @@ if(screen.width >= 540){
     }
 }else{
     console.log(progressBoxes)
-    document.querySelector("p").innerHTML = "here"
+    document.querySelector("h1").innerHTML = "here"
     /*
     for (let i = 0; i < progressBoxes.length; i++) {
         progressBoxes[i].addEventListener("click", ()=>{
