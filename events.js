@@ -1,7 +1,7 @@
 let allImages = document.querySelectorAll(".image");
 let index = 0;
 
-if(screen.width >= 540){
+// if(screen.width >= 540){
     let progressBoxes = document.querySelectorAll(".events-progress-box");
     for (let i = 0; i < progressBoxes.length; i++) {
         progressBoxes[i].addEventListener("click", ()=>{
@@ -58,8 +58,8 @@ if(screen.width >= 540){
             });
         }
     }
-}else{
-    console.log(progressBoxes)
+// }else{
+//     console.log(progressBoxes)
     /*
     for (let i = 0; i < progressBoxes.length; i++) {
         progressBoxes[i].addEventListener("click", ()=>{
@@ -116,5 +116,5 @@ if(screen.width >= 540){
             });
         }
     }*/
-}
+// }
 document.querySelector("h1").innerHTML = screen.width
