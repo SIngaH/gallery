@@ -60,7 +60,6 @@ if(screen.width >= 540){
     }
 }else{
     console.log(progressBoxes)
-    document.querySelector("h1").innerHTML = "here"
     /*
     for (let i = 0; i < progressBoxes.length; i++) {
         progressBoxes[i].addEventListener("click", ()=>{
@@ -76,14 +75,14 @@ if(screen.width >= 540){
             }
         });
         getImgs(i);
-
+        
     }
-      
+    
     /* change img every 3 sec untill one of the little boxes are pressed */
     /*let myInterval = setInterval(() => {
         usingInterval();
     }, 3000);
-
+    
     function usingInterval(){
         if(index === 2){
             index = 0;
@@ -118,3 +117,4 @@ if(screen.width >= 540){
         }
     }*/
 }
+document.querySelector("h1").innerHTML = screen.width
