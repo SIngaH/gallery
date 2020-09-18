@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#000;
+        }
+        .progress-boxes{
+            display:flex;
+            justify-content:center;
+        }
+        .progress-boxes .progress-box{
+            margin:0 1%;
+            width:10px;
+            height:10px;
+            background-color:#fff;
+        }
+        #pink{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <section id="events-of-the-month">
+        <p></p>
+        <div class="images">
+            <img src="images/event-thumb1.jpg" alt="1" class="image">
+            <img src="images/event-thumb2.jpg" alt="2" class="image">
+            <img src="images/event-thumb3.jpg" alt="3" class="image hide">
+            <img src="images/event-thumb4.jpg" alt="4" class="image hide">
+            <img src="images/event-thumb5.jpg" alt="5" class="image hide">
+            <img src="images/event-thumb6.jpg" alt="6" class="image hide">
+        </div>
+
+        <div class="progress-boxes">
+            <div class="aBox events-progress-box box1" id="pink"></div>
+            <div class="aBox events-progress-box box2"></div>
+            <div class="aBox events-progress-box box3"></div>
+
+            <div class="aBox extra-progress-box box4 hide"></div>
+            <div class="aBox extra-progress-box box5 hide"></div>
+            <div class="aBox extra-progress-box box6 hide"></div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="other-gallery.js"></script>
+    <script src="events.js"></script>
+    <script src="https://kit.fontawesome.com/2677b557d6.js"></script>
+</body>
+</html>
